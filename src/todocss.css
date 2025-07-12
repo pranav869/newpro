@@ -1,0 +1,189 @@
+body {
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .todo-list {
+    background: #fff;
+    max-width: 400px;
+    margin: 40px auto;
+    border-radius: 18px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    padding: 32px 24px 24px 24px;
+  }
+  
+  .Head {
+    text-align: center;
+    color: #3a3a3a;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+    font-weight: 700;
+  }
+  
+  input[type="text"] {
+    width: 70%;
+    padding: 10px 12px;
+    border: 1px solid #bdbdbd;
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: border-color 0.2s;
+    margin-right: 8px;
+    outline: none;
+  }
+  
+  input[type="text"]:focus {
+    border-color: #4f8cff;
+  }
+  
+  .Add-button {
+    padding: 10px 18px;
+    background: linear-gradient(90deg, #4f8cff 0%, #38d39f 100%);
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s, transform 0.1s;
+  }
+  
+  .Add-button:hover {
+    background: linear-gradient(90deg, #38d39f 0%, #4f8cff 100%);
+    transform: scale(1.05);
+  }
+  
+  ol {
+    margin-top: 24px;
+    padding-left: 20px;
+  }
+  
+  li {
+    display: flex;
+    align-items: center;
+    background: #f8fafc;
+    margin-bottom: 12px;
+    padding: 12px 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s;
+  }
+  
+  li:hover {
+    box-shadow: 0 4px 16px rgba(76, 201, 240, 0.15);
+  }
+  
+  .text {
+    flex: 1;
+    font-size: 1.06rem;
+    color: #2d3748;
+    font-weight: 500;
+    margin-right: 10px;
+    word-break: break-word;
+  }
+  
+  .delete-button,
+  .move-up,
+  .move-down {
+    border: none;
+    background: none;
+    margin-left: 6px;
+    font-size: 1.06rem;
+    cursor: pointer;
+    border-radius: 4px;
+    padding: 6px 8px;
+    transition: background 0.18s, color 0.18s;
+  }
+  
+  .delete-button {
+    color: #ff4d4f;
+  }
+  
+  .delete-button:hover {
+    background: #ffeaea;
+    color: #b71c1c;
+  }
+  
+  .move-up,
+  .move-down {
+    color: #4f8cff;
+  }
+  
+  .move-up:hover,
+  .move-down:hover {
+    background: #e3f2fd;
+    color: #1565c0;
+  }
+  .pomodoro-timer {
+    background: #f6f8fc;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(76, 201, 240, 0.09);
+    padding: 20px 16px 16px 16px;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+  
+  .pomodoro-timer h2 {
+    color: #4f8cff;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+  
+  .timer-display {
+    font-size: 2.4rem;
+    font-weight: bold;
+    color: #2d3748;
+    margin-bottom: 16px;
+    letter-spacing: 2px;
+  }
+  
+  .timer-buttons button {
+    margin: 0 4px 8px 4px;
+    padding: 8px 14px;
+    border: none;
+    border-radius: 6px;
+    background: linear-gradient(90deg, #4f8cff 0%, #38d39f 100%);
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+  }
+  
+  .timer-buttons button:disabled {
+    background: #bdbdbd;
+    cursor: not-allowed;
+  }
+  
+  .timer-buttons button:hover:not(:disabled) {
+    background: linear-gradient(90deg, #38d39f 0%, #4f8cff 100%);
+    transform: scale(1.06);
+  }
+  .google-signin-button {
+    margin: 12px auto; 
+    background-color: white;
+    border: 1px solid #dadce0;
+    border-radius: 8px;
+    font-size: 14px;
+    color: #3c4043;
+    font-weight: 500;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    cursor: pointer;
+    box-shadow: 0 1px 3px rgba(60, 64, 67, 0.3);
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .google-signin-button:hover {
+    background-color: #f7f8f8;
+    box-shadow: 0 2px 4px rgba(60, 64, 67, 0.35);
+  }
+  
+  .google-signin-button img {
+    width: 18px;
+    margin-right: 10px;
+  }
+  

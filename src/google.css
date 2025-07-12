@@ -1,0 +1,30 @@
+.calendar-button {
+    background: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 12px;
+    margin-left: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  .calendar-button:hover {
+    background: #357ae8;
+  }
+  .calendar-button {
+    background: #4285f4;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 7px 12px;
+    margin-left: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background 0.2s;
+  }
+  .calendar-button:hover {
+    background: #357ae8;
+  }
