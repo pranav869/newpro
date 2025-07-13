@@ -12,7 +12,7 @@ function Todo() {
     "Go to work"
   ]);
   const [newtasks, setnewtasks] = useState("");
-  const { signIn, addEventToCalendar } = useGoogleCalendar();
+  const { signIn, addEventToCalendar,gapiInitialized } = useGoogleCalendar();
 
   function handlechange(event) {
     setnewtasks(event.target.value);
@@ -74,15 +74,25 @@ function Todo() {
             <button className="delete-button" onClick={() => delete_task(index)}>Delete</button>
             <button className="move-up" onClick={() => moveup(index)}>☝️</button>
             <button className="move-down" onClick={() => movedown(index)}>👇</button>
-            <button className="calendar-button" onClick={() => handleAddToCalendar(task)}>Add to Calendar</button>
+            <button
+                className="calendar-button"
+                onClick={() => handleAddToCalendar(task)}
+                disabled={!gapiInitialized} 
+            >
+  Add to Calendar
+</button>
+
           </li>
         ))}
       </ol>
       <PomodoroTimer />
+      <a href="https://pranavcv.neocities.org">Privacy policies</a><br/>
+      <a href="https://www.termsfeed.com/live/872ca9eb-1cac-4aa5-b8fa-3c2fd85cf3f5">Terms and conditions</a>
     </div>
+    
+    
   );
 }
 export default Todo;
 
 
-//style={{ marginLeft: "10px" }}
