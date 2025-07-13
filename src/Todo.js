@@ -60,7 +60,7 @@ function Todo() {
   
   return (
     <div className="todo-list">
-      <h1 className="Head">TO DO LIST</h1>
+      <h1 className="Head"> TO DO LIST</h1>
       <input type="text" placeholder="Enter a new task" value={newtasks} onChange={handlechange} />
       <button onClick={addtask} className="Add-button">Add</button>
       <button onClick={signIn}  className="google-signin-button">
